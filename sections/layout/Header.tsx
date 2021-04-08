@@ -1,10 +1,9 @@
-import Navbar from '@components/navbar';
+import style from './Header.module.scss';
 
 const Header = () => {
   return (
-    <header>
-      <a>Tomas Bangerter</a>
-      <Navbar />
+    <header className={style.header}>
+      <a className={style.name}>Tomas Bangerter</a>
     </header>
   );
 };

@@ -1,0 +1,14 @@
+@use '@styles/colors';
+
+.name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.header {
+  padding: 0.5rem 1rem;
+  box-shadow: 0 1px 4px 0 rgb(0 0 0 / 20%);
+  display: flex;
+  justify-content: space-between;
+}

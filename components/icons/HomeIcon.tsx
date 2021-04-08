@@ -1,6 +1,6 @@
 const HomeIcon = () => {
   return (
-    <svg xmlns='http://www.w3.org/2000/svg' width='30' height='25.5' viewBox='0 0 30 25.5'>
+    <svg xmlns='http://www.w3.org/2000/svg' width='24' viewBox='0 0 30 25.5'>
       <path
         id='Icon_material-home'
         data-name='Icon material-home'

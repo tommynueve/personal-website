@@ -6,14 +6,29 @@ const Navbar: React.FC = () => {
     <nav className={style.nav}>
       <ul>
         <li>
-          <a>
+          <a className={style.selected}>
             <HomeIcon />
             <p>Home</p>
           </a>
         </li>
-        <li>Menu 2</li>
-        <li>Menu 3</li>
-        <li>Menu 4</li>
+        <li>
+          <a>
+            <HomeIcon />
+            <p>Resume</p>
+          </a>
+        </li>
+        <li>
+          <a>
+            <HomeIcon />
+            <p>Projects</p>
+          </a>
+        </li>
+        <li>
+          <a>
+            <HomeIcon />
+            <p>Contact</p>
+          </a>
+        </li>
       </ul>
     </nav>
   );
