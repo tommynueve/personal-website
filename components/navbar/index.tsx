@@ -12,16 +12,10 @@ const Navbar: React.FC = () => {
           <MenuLinkItem name='Home' url='/' icon={<HomeIcon />} />
         </li>
         <li>
-          <a>
-            <HomeIcon />
-            <p>Resume</p>
-          </a>
+          <MenuLinkItem name='Resume' url='/resume' icon={<HomeIcon />} />
         </li>
         <li>
-          <a>
-            <HomeIcon />
-            <p>Projects</p>
-          </a>
+          <MenuLinkItem name='Projects' url='/projects' icon={<HomeIcon />} />
         </li>
         <li>
           <MenuLinkItem name='Contact' url='/contact' icon={<HomeIcon />} />

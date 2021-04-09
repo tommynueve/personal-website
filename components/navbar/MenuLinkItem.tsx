@@ -6,7 +6,7 @@ import style from './MenuLinkItem.module.scss';
 interface Props {
   name: string;
   url: string;
-  icon: React.FC<React.SVGProps<SVGSVGElement>>;
+  icon: React.ReactElement;
 }
 
 const MenuLinkItem: React.FC<Props> = ({ name, url, icon }) => {
