@@ -1,7 +1,5 @@
+import Layout from '@sections/layout';
 import Head from 'next/head';
-
-import Header from '@sections/layout/Header';
-import Navbar from '@components/navbar';
 
 export default function Home() {
   return (
@@ -10,8 +8,7 @@ export default function Home() {
         <title>My portfolio</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <Header />
-      <Navbar />
+      <Layout>Home Page</Layout>
     </>
   );
 }

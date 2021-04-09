@@ -1,15 +1,15 @@
+import Link from 'next/link';
+
 import HomeIcon from '@components/icons/HomeIcon';
 import style from './Navbar.module.scss';
+import MenuLinkItem from './MenuLinkItem';
 
 const Navbar: React.FC = () => {
   return (
     <nav className={style.nav}>
       <ul>
         <li>
-          <a className={style.selected}>
-            <HomeIcon />
-            <p>Home</p>
-          </a>
+          <MenuLinkItem name='Home' url='/' icon={<HomeIcon />} />
         </li>
         <li>
           <a>
@@ -24,10 +24,7 @@ const Navbar: React.FC = () => {
           </a>
         </li>
         <li>
-          <a>
-            <HomeIcon />
-            <p>Contact</p>
-          </a>
+          <MenuLinkItem name='Contact' url='/contact' icon={<HomeIcon />} />
         </li>
       </ul>
     </nav>
