@@ -1,6 +1,15 @@
 .homeContainer {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
+  max-width: 40rem;
+}
+
+.title {
+  margin: 1rem 0;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  margin-bottom: 1rem;
 }
