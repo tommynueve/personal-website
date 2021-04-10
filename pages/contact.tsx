@@ -1,6 +1,7 @@
 import Head from 'next/head';
 
 import Layout from '@sections/layout';
+import ContactSection from '@sections/contact';
 
 export default function Contact() {
   return (
@@ -10,7 +11,7 @@ export default function Contact() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Layout>
-        <div>Contact Page</div>
+        <ContactSection />
       </Layout>
     </>
   );

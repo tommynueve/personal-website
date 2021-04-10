@@ -1,4 +1,5 @@
 @use '@styles/colors';
+@use '@styles/mixins';
 
 .name {
   font-size: 1.25rem;
@@ -7,7 +8,10 @@
 }
 
 .header {
-  padding: 1rem 2rem;
+  padding: 0.75rem 1rem;
+  @include mixins.mq(sm) {
+    padding: 1rem 2rem;
+  }
   box-shadow: 0 1px 4px 0 rgb(0 0 0 / 20%);
   display: flex;
   justify-content: space-between;
