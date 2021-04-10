@@ -1,3 +1,4 @@
+import MainButton from '@components/buttons/MainButton';
 import CircleFrame from '@components/imageframe/CircleFrame';
 import style from './Home.module.scss';
 
@@ -10,9 +11,12 @@ const HomeSection = () => {
       <p>
         I started in the IT world as a business analyst, earned a position as a Product Owner, and although I was in a
         path of success, that didn't make me happy... I wanted to actually build apps myself! So one day, I took a big
-        risk, I started over as a web developer and I have been one for 3+ years now. Was it worth it? I start every day
-        with a smile on my face. Best decision I have ever made.
+        risk, I started over as a web developer... Best decision I have ever made.
       </p>
+      <div className={style.ctaContainer}>
+        <MainButton text={'Check out my resume'} />
+        <MainButton text={'Contact me'} variant='secondary' />
+      </div>
     </div>
   );
 };

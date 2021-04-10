@@ -1,15 +1,34 @@
+@use '@styles/mixins';
+
 .homeContainer {
   display: flex;
   flex-direction: column;
   text-align: center;
   max-width: 40rem;
+  margin: 0 auto;
+  & > :not(:last-child) {
+    margin-bottom: 1rem;
+  }
 }
 
 .title {
-  margin: 1rem 0;
   text-transform: uppercase;
 }
 
-.subtitle {
-  margin-bottom: 1rem;
+.ctaContainer {
+  @include mixins.mq(md) {
+    display: flex;
+    justify-content: center;
+    & > :not(:last-child) {
+      margin-right: 2rem;
+    }
+  }
+
+  button {
+    margin-bottom: 1rem;
+    width: 100%;
+    @include mixins.mq(md) {
+      width: 240px;
+    }
+  }
 }

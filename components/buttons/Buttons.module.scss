@@ -1,0 +1,16 @@
+@use '@styles/colors';
+
+.main-button {
+  background-color: colors.$primary;
+  border: 2px solid colors.$primary;
+  color: colors.$white;
+  padding: 1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.secondary {
+  background-color: colors.$white;
+  color: colors.$primary;
+}
