@@ -1,12 +1,10 @@
-import Link from 'next/link';
-
 import HomeIcon from '@components/icons/HomeIcon';
 import style from './Navbar.module.scss';
 import MenuLinkItem from './MenuLinkItem';
 
-const Navbar: React.FC = () => {
+const BottomNavbar: React.FC = () => {
   return (
-    <nav className={style.nav}>
+    <nav className={style['bottom-nav']}>
       <ul>
         <li>
           <MenuLinkItem name='Home' url='/' icon={<HomeIcon />} />
@@ -25,4 +23,4 @@ const Navbar: React.FC = () => {
   );
 };
 
-export default Navbar;
+export default BottomNavbar;

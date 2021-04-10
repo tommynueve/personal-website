@@ -1,6 +1,11 @@
 @use '@styles/colors';
+@use '@styles/mixins';
 
-.nav {
+.bottom-nav {
+  @include mixins.mq(sm) {
+    display: none;
+  }
+
   position: fixed;
   bottom: 0;
   z-index: 1;
@@ -12,5 +17,27 @@
     justify-content: space-evenly;
     padding: 0.5rem 0;
     border-top: 1px solid rgba(colors.$grey, 0.5);
+  }
+}
+
+.top-nav {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  display: none;
+  @include mixins.mq(sm) {
+    display: block;
+  }
+
+  ul {
+    display: flex;
+
+    @include mixins.allChildExceptLast {
+      margin-right: 2rem;
+    }
+  }
+
+  p {
+    font-size: 1rem;
   }
 }

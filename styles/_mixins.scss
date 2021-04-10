@@ -7,3 +7,9 @@
     @content;
   }
 }
+
+@mixin allChildExceptLast() {
+  & > :not(:last-child) {
+    @content;
+  }
+}

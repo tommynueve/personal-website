@@ -6,7 +6,7 @@
   text-align: center;
   max-width: 40rem;
   margin: 0 auto;
-  & > :not(:last-child) {
+  @include mixins.allChildExceptLast {
     margin-bottom: 1rem;
   }
 }
@@ -19,7 +19,7 @@
   @include mixins.mq(md) {
     display: flex;
     justify-content: center;
-    & > :not(:last-child) {
+    @include mixins.allChildExceptLast {
       margin-right: 2rem;
     }
   }
