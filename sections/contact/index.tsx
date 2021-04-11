@@ -1,5 +1,5 @@
 import MainButton from '@components/buttons/MainButton';
-import HomeIcon from '@components/icons/HomeIcon';
+import LinkedinIcon from '@components/icons/LinkedinIcon';
 import style from './Contact.module.scss';
 
 const ContactSection = () => {
@@ -18,7 +18,7 @@ const ContactSection = () => {
       </form>
       <div className={style['linkedin-container']}>
         <p>Or find me on Linkedin: </p>
-        <HomeIcon />
+        <LinkedinIcon />
       </div>
     </div>
   );

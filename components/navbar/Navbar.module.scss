@@ -15,8 +15,11 @@
   ul {
     display: flex;
     justify-content: space-evenly;
-    padding: 0.5rem 0;
+    padding: 0.5rem;
     border-top: 1px solid rgba(colors.$grey, 0.5);
+    li {
+      flex-basis: 100%;
+    }
   }
 }
 

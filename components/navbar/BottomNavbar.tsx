@@ -1,6 +1,9 @@
 import HomeIcon from '@components/icons/HomeIcon';
 import style from './Navbar.module.scss';
 import MenuLinkItem from './MenuLinkItem';
+import ProjectsIcon from '@components/icons/ProjectsIcon';
+import EmailIcon from '@components/icons/EmailIcon';
+import ResumeIcon from '@components/icons/ResumeIcon';
 
 const BottomNavbar: React.FC = () => {
   return (
@@ -10,13 +13,13 @@ const BottomNavbar: React.FC = () => {
           <MenuLinkItem name='Home' url='/' icon={<HomeIcon />} />
         </li>
         <li>
-          <MenuLinkItem name='Resume' url='/resume' icon={<HomeIcon />} />
+          <MenuLinkItem name='Resume' url='/resume' icon={<ResumeIcon />} />
         </li>
         <li>
-          <MenuLinkItem name='Projects' url='/projects' icon={<HomeIcon />} />
+          <MenuLinkItem name='Projects' url='/projects' icon={<ProjectsIcon />} />
         </li>
         <li>
-          <MenuLinkItem name='Contact' url='/contact' icon={<HomeIcon />} />
+          <MenuLinkItem name='Contact' url='/contact' icon={<EmailIcon />} />
         </li>
       </ul>
     </nav>
