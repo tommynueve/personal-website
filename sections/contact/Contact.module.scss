@@ -1,6 +1,39 @@
+@use '@styles/colors';
+@use '@styles/mixins';
+
 .contact-container {
   text-align: center;
-  h1 {
-    text-transform: uppercase;
+  max-width: 40em;
+  margin: 0 auto;
+
+  @include mixins.allChildExceptLast() {
+    margin-bottom: 1rem;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    label {
+      text-align: left;
+    }
+    input,
+    textarea {
+      padding: 0.5rem;
+    }
+    button {
+      margin-top: 1rem;
+    }
+    @include mixins.allChildExceptLast() {
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+
+.linkedin-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  @include mixins.allChildExceptLast() {
+    margin-right: 0.5rem;
   }
 }

@@ -5,10 +5,18 @@ interface Props {
   variant?: 'primary' | 'secondary';
 }
 
-const MainButton: React.FC<Props> = ({ text = '', variant = 'primary' }) => {
+const MainButton: React.FC<Props & React.ButtonHTMLAttributes<HTMLButtonElement>> = ({
+  text = '',
+  variant = 'primary',
+  ...rest
+}) => {
   const className = `${style['main-button']} ${variant === 'secondary' ? style.secondary : ''}`;
 
-  return <button className={className}>{text}</button>;
+  return (
+    <button className={className} {...rest}>
+      {text}
+    </button>
+  );
 };
 
 export default MainButton;
