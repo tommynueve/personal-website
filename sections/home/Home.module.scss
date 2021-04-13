@@ -7,7 +7,7 @@
   max-width: 40rem;
   margin: 0 auto;
   @include mixins.allChildExceptLast {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
   }
 }
 
