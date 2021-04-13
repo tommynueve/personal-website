@@ -16,11 +16,10 @@
 }
 
 .secondary {
-  background-color: colors.$white;
+  background-color: transparent;
   color: colors.$primary;
 
   &:hover {
-    background-color: colors.$white;
     transform: translate(0px, -3px);
   }
 }
