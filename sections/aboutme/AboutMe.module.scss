@@ -1,0 +1,7 @@
+@use '@styles/colors';
+
+.container {
+  background-color: colors.$white;
+  color: colors.$black;
+  text-align: center;
+}

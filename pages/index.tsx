@@ -1,4 +1,5 @@
 import HomeSection from '@sections/home';
+import AboutMe from '@sections/aboutme';
 import Layout from '@sections/layout';
 import Head from 'next/head';
 
@@ -11,6 +12,7 @@ export default function Home() {
       </Head>
       <Layout>
         <HomeSection />
+        <AboutMe />
       </Layout>
     </>
   );
