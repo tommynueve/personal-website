@@ -15,7 +15,7 @@ const MainNavbar = () => {
           <MenuLinkItem name='Projects' url='/projects' />
         </li>
         <li>
-          <MenuLinkItem name='Contact' url='/contact' />
+          <MenuLinkItem name='Contact' url='/contact' variant='highlighted' />
         </li>
       </ul>
     </nav>
