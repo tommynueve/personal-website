@@ -24,6 +24,10 @@
 
 .selected {
   color: colors.$primary;
+  @include mixins.mq(sm) {
+    color: inherit;
+  }
+
   svg {
     fill: colors.$primary;
   }
