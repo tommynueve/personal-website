@@ -1,5 +1,11 @@
+@use '@styles/colors';
+
 .container {
+  margin-top: 1em;
   h3 {
-    margin: 1em 0 0.25em 0;
+    margin: 0;
+  }
+  svg {
+    fill: colors.$black;
   }
 }

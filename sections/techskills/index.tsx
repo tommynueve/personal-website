@@ -1,4 +1,5 @@
 import MainCard from '@components/cards/MainCard';
+import FrontendIcon from '@components/icons/FrontendIcon';
 import styles from './TechSkills.module.scss';
 
 const TechSkillsSection = () => {
@@ -6,9 +7,9 @@ const TechSkillsSection = () => {
     <section className={styles.container}>
       <h2>Technical Skills</h2>
       <div className={styles.grid}>
-        <MainCard title={content.frontend[0].category} description={content.frontend[0].details} />
-        <MainCard title={content.frontend[1].category} description={content.frontend[1].details} />
-        <MainCard title='Other' description={['Test']} />
+        {content.map((item) => (
+          <MainCard title={item.title} description={item.details} icon={item.icon} />
+        ))}
       </div>
     </section>
   );
@@ -16,21 +17,26 @@ const TechSkillsSection = () => {
 
 export default TechSkillsSection;
 
-const content = {
-  frontend: [
-    {
-      category: 'JavaScript & TypeScript',
-      details: ['Functional and Object Oriented Programming using modern ES6+ JavaScript and TypeScript.'],
-    },
-    {
-      category: 'React',
-      details: [
-        'Nextjs and Gatsby for Static Site Generation and Server Side Rendering.',
-        'Redux and Context API for state management.',
-        'Material-UI, Bootstrap and styled-components for UI theming.',
-      ],
-    },
-  ],
-  backend: 'backend skills',
-  other: 'other skills',
-};
+interface Skill {
+  title: string;
+  details: string[];
+  icon?: React.ReactElement;
+}
+
+const content: Skill[] = [
+  {
+    title: 'Frontend',
+    details: ['Functional and Object Oriented Programming using modern ES6+ JavaScript and TypeScript.'],
+    icon: <FrontendIcon />,
+  },
+  {
+    title: 'Backend',
+    details: ['Functional and Object Oriented Programming using modern ES6+ JavaScript and TypeScript.'],
+    icon: <FrontendIcon />,
+  },
+  {
+    title: 'Other',
+    details: ['Functional and Object Oriented Programming using modern ES6+ JavaScript and TypeScript.'],
+    icon: <FrontendIcon />,
+  },
+];

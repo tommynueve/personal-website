@@ -5,11 +5,17 @@
 .container {
   @include mixins.secondaryBackground;
   text-align: center;
+  h2 {
+    margin-bottom: 1.5rem;
+  }
   .grid {
-    text-align: left;
+    display: flex;
+    @include mixins.allChildExceptLast {
+      margin-right: 2em;
+    }
   }
   & > * {
-    max-width: map-get(breakpoints.$breakpoints, 'sm');
+    max-width: map-get(breakpoints.$breakpoints, 'md');
     margin: 0 auto;
   }
 }
