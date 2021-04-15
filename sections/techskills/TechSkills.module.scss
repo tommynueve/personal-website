@@ -1,11 +1,12 @@
-@use '@styles/breakpoints';
+@use '@styles/colors';
 @use '@styles/mixins';
+@use '@styles/breakpoints';
 
 .container {
-  @include mixins.tertiaryBackground;
+  @include mixins.secondaryBackground;
   text-align: center;
-  @include mixins.allChildExceptLast {
-    margin-bottom: 1.5rem;
+  .grid {
+    text-align: left;
   }
   & > * {
     max-width: map-get(breakpoints.$breakpoints, 'sm');
