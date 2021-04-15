@@ -4,7 +4,7 @@ import style from './Home.module.scss';
 
 const HomeSection = () => {
   return (
-    <div className={style.homeContainer}>
+    <section className={style.homeContainer}>
       <CircleFrame />
       <h1 className={style.title}>
         Tomas Bangerter<br></br>
@@ -15,7 +15,7 @@ const HomeSection = () => {
         <MainButton text={'Download my resume'} />
         <MainButton text={'Contact me'} variant='secondary' />
       </div>
-    </div>
+    </section>
   );
 };
 
