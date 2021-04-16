@@ -25,55 +25,26 @@ interface Skill {
 
 const content: Skill[] = [
   {
-    title: 'Frontend',
+    title: 'Frontend development',
     details: [
-      'JavaScript, TypeScript, HTML, CSS.',
-      'React, Redux, Nextjs, Gatsby.',
-      'SASS, LESS, CSS-in-js.',
-      'Jest, RTL, Cypress, Puppeteer.',
+      'I build web applications using JavaScript frameworks such as React or Vue. I have strong knowledge of JavaScript ES6+, TypeScript, CSS, SASS, LESS, and semantic HTML.',
     ],
     icon: <FrontendIcon />,
   },
   {
-    title: 'Backend',
+    title: 'Backend development',
+    details: ['I have experience building micro-services with Nodejs, using Express and Restify, and with Python using Flask.'],
+    icon: <FrontendIcon />,
+  },
+  {
+    title: 'UI / UX Design',
     details: [
-      'Nodejs with Express and Restify.',
-      'Python with Flask.',
-      'MongoDB, PostgreSQL, MSSQL.',
-      'Firebase, Strapi, Contentful.',
+      'I design websites applying UI and UX fundamentals and accessibility practices. I prototype with Adobe XD to facilitate web development.',
     ],
     icon: <FrontendIcon />,
   },
   {
-    title: 'Other',
-    details: ['Git with GitHub and GitLab.', 'Docker, Openshift, IBM Cloud.', 'Artificial Intelligence.'],
-    icon: <FrontendIcon />,
-  },
-];
-
-const content2: Skill[] = [
-  {
-    title: 'Frontend',
-    details: [
-      'JavaScript, TypeScript, HTML, CSS.',
-      'React, Redux, Nextjs, Gatsby.',
-      'SASS, LESS, CSS-in-js.',
-      'Jest, RTL, Cypress, Puppeteer.',
-    ],
-    icon: <FrontendIcon />,
-  },
-  {
-    title: 'Backend',
-    details: [
-      'Nodejs with Express and Restify.',
-      'Python with Flask.',
-      'MongoDB, PostgreSQL, MSSQL.',
-      'Firebase, Strapi, Contentful.',
-    ],
-    icon: <FrontendIcon />,
-  },
-  {
-    title: 'Other',
+    title: 'CI / CD',
     details: ['Git with GitHub and GitLab.', 'Docker, Openshift, IBM Cloud.', 'Artificial Intelligence.'],
     icon: <FrontendIcon />,
   },

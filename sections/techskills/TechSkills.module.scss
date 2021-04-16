@@ -10,15 +10,15 @@
   }
   .grid {
     display: flex;
-    @include mixins.allChildExceptLast {
-      margin-right: 2em;
-    }
+    flex-wrap: wrap;
+    justify-content: center;
     & > * {
-      width: 100%;
+      width: 400px;
+      padding: 1rem;
     }
   }
   & > * {
-    max-width: map-get(breakpoints.$breakpoints, 'md');
+    max-width: map-get(breakpoints.$breakpoints, 'lg');
     margin: 0 auto;
   }
 }
