@@ -11,7 +11,7 @@ const MainCard: React.FC<Props> = ({ title, description, icon }) => {
     <div className={styles.container}>
       {icon}
       <h3>{title}</h3>
-      {description && description.map((value) => <p key={title}>{value}</p>)}
+      {description && description.map((value, index) => <p key={index}>{value}</p>)}
     </div>
   );
 };

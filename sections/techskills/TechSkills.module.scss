@@ -4,10 +4,6 @@
 
 .container {
   @include mixins.secondaryBackground;
-  text-align: center;
-  h2 {
-    margin-bottom: 1.5rem;
-  }
   .grid {
     display: flex;
     flex-wrap: wrap;

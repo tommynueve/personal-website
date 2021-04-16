@@ -3,7 +3,6 @@
 
 .container {
   @include mixins.tertiaryBackground;
-  text-align: center;
   @include mixins.allChildExceptLast {
     margin-bottom: 1.5rem;
   }

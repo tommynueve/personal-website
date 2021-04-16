@@ -8,7 +8,7 @@ const TechSkillsSection = () => {
       <h2>Technical skills</h2>
       <div className={styles.grid}>
         {content.map((item) => (
-          <MainCard title={item.title} description={item.details} icon={item.icon} />
+          <MainCard title={item.title} description={item.details} icon={item.icon} key={item.title} />
         ))}
       </div>
     </section>

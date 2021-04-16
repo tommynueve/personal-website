@@ -3,6 +3,7 @@ import AboutMe from '@sections/aboutme';
 import Layout from '@sections/layout';
 import Head from 'next/head';
 import TechSkillsSection from '@sections/techskills';
+import WorkExperience from '@sections/workexperience';
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <HomeSection />
         <AboutMe />
         <TechSkillsSection />
+        <WorkExperience />
       </Layout>
     </>
   );
