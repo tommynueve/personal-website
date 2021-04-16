@@ -5,7 +5,7 @@ import styles from './TechSkills.module.scss';
 const TechSkillsSection = () => {
   return (
     <section className={styles.container}>
-      <h2>Technical Skills</h2>
+      <h2>Technical skills</h2>
       <div className={styles.grid}>
         {content.map((item) => (
           <MainCard title={item.title} description={item.details} icon={item.icon} />
@@ -26,17 +26,55 @@ interface Skill {
 const content: Skill[] = [
   {
     title: 'Frontend',
-    details: ['Functional and Object Oriented Programming using modern ES6+ JavaScript and TypeScript.'],
+    details: [
+      'JavaScript, TypeScript, HTML, CSS.',
+      'React, Redux, Nextjs, Gatsby.',
+      'SASS, LESS, CSS-in-js.',
+      'Jest, RTL, Cypress, Puppeteer.',
+    ],
     icon: <FrontendIcon />,
   },
   {
     title: 'Backend',
-    details: ['Functional and Object Oriented Programming using modern ES6+ JavaScript and TypeScript.'],
+    details: [
+      'Nodejs with Express and Restify.',
+      'Python with Flask.',
+      'MongoDB, PostgreSQL, MSSQL.',
+      'Firebase, Strapi, Contentful.',
+    ],
     icon: <FrontendIcon />,
   },
   {
     title: 'Other',
-    details: ['Functional and Object Oriented Programming using modern ES6+ JavaScript and TypeScript.'],
+    details: ['Git with GitHub and GitLab.', 'Docker, Openshift, IBM Cloud.', 'Artificial Intelligence.'],
+    icon: <FrontendIcon />,
+  },
+];
+
+const content2: Skill[] = [
+  {
+    title: 'Frontend',
+    details: [
+      'JavaScript, TypeScript, HTML, CSS.',
+      'React, Redux, Nextjs, Gatsby.',
+      'SASS, LESS, CSS-in-js.',
+      'Jest, RTL, Cypress, Puppeteer.',
+    ],
+    icon: <FrontendIcon />,
+  },
+  {
+    title: 'Backend',
+    details: [
+      'Nodejs with Express and Restify.',
+      'Python with Flask.',
+      'MongoDB, PostgreSQL, MSSQL.',
+      'Firebase, Strapi, Contentful.',
+    ],
+    icon: <FrontendIcon />,
+  },
+  {
+    title: 'Other',
+    details: ['Git with GitHub and GitLab.', 'Docker, Openshift, IBM Cloud.', 'Artificial Intelligence.'],
     icon: <FrontendIcon />,
   },
 ];
