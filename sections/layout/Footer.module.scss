@@ -1,0 +1,18 @@
+@use '@styles/colors';
+@use '@styles/mixins';
+@use '@styles/breakpoints';
+
+.container {
+  display: none;
+  max-width: map-get(breakpoints.$breakpoints, 'lg');
+  margin: 0 auto;
+  padding: 2rem;
+  small {
+    color: colors.$grey;
+  }
+  @include mixins.mq(sm) {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+  }
+}
