@@ -1,0 +1,55 @@
+@use '@styles/colors';
+@use '@styles/breakpoints';
+@use '@styles/mixins';
+
+.main-container {
+  & > * {
+    max-width: map-get(breakpoints.$breakpoints, 'lg');
+    margin: 0 auto;
+  }
+}
+
+.node-container {
+  display: flex;
+  text-align: left;
+  .circle {
+    height: 30px;
+    width: 30px;
+    background-color: colors.$dark-blue;
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-right: 0.5em;
+    @include mixins.mq(sm) {
+      margin: 0 1em;
+    }
+  }
+  .date {
+    display: none;
+    @include mixins.mq(sm) {
+      display: block;
+      font-weight: 600;
+      flex-shrink: 0;
+      margin-top: 1px;
+      width: 10%;
+      text-align: right;
+    }
+  }
+  .text {
+    position: relative;
+    padding-bottom: 2em;
+    &::before {
+      content: '';
+      width: 2px;
+      height: 100%;
+      background-color: colors.$dark-blue;
+      position: absolute;
+      left: -24px;
+      @include mixins.mq(sm) {
+        left: -32px;
+      }
+    }
+  }
+  h3 {
+    margin: 0;
+  }
+}
