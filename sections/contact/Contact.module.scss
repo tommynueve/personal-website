@@ -52,4 +52,22 @@
       margin-bottom: 0.5rem;
     }
   }
+
+  .error,
+  .success {
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: left;
+    margin-top: 1.5rem;
+  }
+
+  .error {
+    background-color: colors.$error-light;
+    color: colors.$error;
+  }
+
+  .success {
+    background-color: colors.$success-light;
+    color: colors.$success;
+  }
 }
