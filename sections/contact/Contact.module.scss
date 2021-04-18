@@ -3,6 +3,7 @@
 @use '@styles/breakpoints';
 
 .contact-container {
+  min-height: 900px;
   & > * {
     max-width: map-get(breakpoints.$breakpoints, 'sm');
     margin: 0 auto;
@@ -14,9 +15,11 @@
 
   h1 {
     font-size: 2rem;
+    margin-bottom: 0.5rem !important;
   }
 
   address {
+    margin-top: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -32,7 +35,7 @@
   }
 
   form {
-    margin-top: 4rem;
+    margin-top: 3rem;
     display: flex;
     flex-direction: column;
     label {
