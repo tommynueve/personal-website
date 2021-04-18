@@ -1,0 +1,40 @@
+@use '@styles/colors';
+@use '@styles/mixins';
+
+.link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.875rem;
+  color: colors.$grey;
+  margin-top: 0.3rem;
+
+  @include mixins.mq(sm) {
+    color: inherit;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  svg {
+    fill: colors.$grey;
+  }
+}
+
+.selected {
+  color: colors.$primary;
+  @include mixins.mq(sm) {
+    color: inherit;
+  }
+
+  svg {
+    fill: colors.$primary;
+  }
+}
+
+.highlighted {
+  padding: 0.4rem 0.8rem;
+  border-radius: 10px;
+  background-color: colors.$primary;
+}

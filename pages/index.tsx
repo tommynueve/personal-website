@@ -1,4 +1,9 @@
+import HomeSection from '@sections/home';
+import AboutMe from '@sections/aboutme';
+import Layout from '@sections/layout';
 import Head from 'next/head';
+import TechSkillsSection from '@sections/techskills';
+import Career from '@sections/career';
 
 export default function Home() {
   return (
@@ -7,7 +12,12 @@ export default function Home() {
         <title>My portfolio</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <header>Hello world!</header>
+      <Layout>
+        <HomeSection />
+        <AboutMe />
+        <TechSkillsSection />
+        <Career />
+      </Layout>
     </>
   );
 }

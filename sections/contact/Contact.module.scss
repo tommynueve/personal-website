@@ -1,0 +1,73 @@
+@use '@styles/colors';
+@use '@styles/mixins';
+@use '@styles/breakpoints';
+
+.contact-container {
+  min-height: 900px;
+  & > * {
+    max-width: map-get(breakpoints.$breakpoints, 'sm');
+    margin: 0 auto;
+  }
+
+  @include mixins.allChildExceptLast() {
+    margin-bottom: 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem !important;
+  }
+
+  address {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: colors.$white;
+    font-style: normal;
+    text-decoration: underline;
+    @include mixins.allChildExceptLast() {
+      margin-right: 0.5rem;
+    }
+    a:hover {
+      opacity: 0.8;
+    }
+  }
+
+  form {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    label {
+      text-align: left;
+    }
+    input,
+    textarea {
+      padding: 0.5rem;
+    }
+    button {
+      margin-top: 1rem;
+    }
+    @include mixins.allChildExceptLast() {
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  .error,
+  .success {
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: left;
+    margin-top: 1.5rem;
+  }
+
+  .error {
+    background-color: colors.$error-light;
+    color: colors.$error;
+  }
+
+  .success {
+    background-color: colors.$success-light;
+    color: colors.$success;
+  }
+}

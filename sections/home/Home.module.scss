@@ -1,0 +1,38 @@
+@use '@styles/mixins';
+@use '@styles/colors';
+
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+  max-width: 40rem;
+  @include mixins.allChildExceptLast {
+    margin-bottom: 1.5rem;
+  }
+  .title {
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    span {
+      color: colors.$primary;
+    }
+  }
+}
+
+.ctaContainer {
+  @include mixins.mq(md) {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    @include mixins.allChildExceptLast {
+      margin-right: 2rem;
+    }
+  }
+
+  button {
+    margin-bottom: 1rem;
+    width: 100%;
+    @include mixins.mq(md) {
+      width: 240px;
+    }
+  }
+}

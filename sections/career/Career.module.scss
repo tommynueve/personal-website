@@ -1,0 +1,8 @@
+@use '@styles/mixins';
+
+.container {
+  @include mixins.tertiaryBackground;
+  h2 {
+    margin-bottom: 2rem;
+  }
+}

@@ -1,0 +1,64 @@
+@use '@styles/colors';
+@use '@styles/breakpoints';
+@use '@styles/mixins';
+
+.main-container {
+  & > * {
+    max-width: map-get(breakpoints.$breakpoints, 'lg');
+    margin: 0 auto;
+  }
+}
+
+.node-container {
+  display: grid;
+  text-align: left;
+  grid-template-areas:
+    'circle date'
+    ' circle text';
+  @include mixins.mq(sm) {
+    grid-template-areas: 'date circle text';
+    grid-template-columns: 10% auto auto;
+  }
+  .circle {
+    grid-area: circle;
+    height: 25px;
+    width: 25px;
+    background-color: colors.$dark-blue;
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-right: 0.5em;
+    @include mixins.mq(sm) {
+      margin: 0 1em;
+    }
+  }
+  .date {
+    grid-area: date;
+    font-weight: 600;
+    flex-shrink: 0;
+    @include mixins.mq(sm) {
+      margin-top: 1px;
+      text-align: right;
+    }
+  }
+  .text {
+    grid-area: text;
+    position: relative;
+    &::before {
+      content: '';
+      width: 2px;
+      height: 100%;
+      background-color: colors.$dark-blue;
+      position: absolute;
+      left: -22px;
+      @include mixins.mq(sm) {
+        left: -30px;
+      }
+    }
+  }
+  h3 {
+    margin: 0;
+  }
+  &:not(:last-child) > .text {
+    padding-bottom: 2em;
+  }
+}

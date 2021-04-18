@@ -1,0 +1,26 @@
+@use './breakpoints';
+@use './colors';
+
+@mixin mq($key) {
+  $size: map-get(breakpoints.$breakpoints, $key);
+
+  @media only screen and (min-width: $size) {
+    @content;
+  }
+}
+
+@mixin allChildExceptLast() {
+  & > :not(:last-child) {
+    @content;
+  }
+}
+
+@mixin secondaryBackground {
+  background-color: colors.$white;
+  color: colors.$black;
+}
+
+@mixin tertiaryBackground {
+  background-color: colors.$tertiary;
+  color: colors.$black;
+}

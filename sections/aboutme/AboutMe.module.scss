@@ -1,0 +1,13 @@
+@use '@styles/breakpoints';
+@use '@styles/mixins';
+
+.container {
+  @include mixins.tertiaryBackground;
+  @include mixins.allChildExceptLast {
+    margin-bottom: 1.5rem;
+  }
+  & > * {
+    max-width: map-get(breakpoints.$breakpoints, 'sm');
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,25 @@
+@use '@styles/colors';
+
+.main-button {
+  background-color: colors.$primary;
+  border: 2px solid colors.$primary;
+  border-radius: 10px;
+  color: colors.$white;
+  padding: 0.9rem 1.5rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 200ms ease;
+
+  &:hover {
+    transform: translate(0px, -3px);
+  }
+}
+
+.secondary {
+  background-color: transparent;
+  color: colors.$primary;
+
+  &:hover {
+    transform: translate(0px, -3px);
+  }
+}
