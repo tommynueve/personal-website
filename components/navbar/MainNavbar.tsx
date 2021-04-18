@@ -9,9 +9,6 @@ const MainNavbar = () => {
           <MenuLinkItem name='Home' url='/' />
         </li>
         <li>
-          <MenuLinkItem name='Resume' url='/resume' />
-        </li>
-        <li>
           <MenuLinkItem name='Projects' url='/projects' />
         </li>
         <li>

@@ -4,7 +4,7 @@ import style from './Contact.module.scss';
 
 const ContactSection = () => {
   return (
-    <div className={style['contact-container']}>
+    <section className={style['contact-container']}>
       <h1>Got a proposition?</h1>
       <h3>I'm always on the look for new challenges!</h3>
       <form>
@@ -20,7 +20,7 @@ const ContactSection = () => {
         <p>Or find me on Linkedin: </p>
         <LinkedinIcon />
       </div>
-    </div>
+    </section>
   );
 };
 

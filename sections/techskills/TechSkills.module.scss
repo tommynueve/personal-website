@@ -14,7 +14,7 @@
     }
   }
   & > * {
-    max-width: map-get(breakpoints.$breakpoints, 'lg');
+    max-width: map-get(breakpoints.$breakpoints, 'md');
     margin: 0 auto;
   }
 }
