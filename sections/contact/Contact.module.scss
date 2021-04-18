@@ -1,16 +1,38 @@
 @use '@styles/colors';
 @use '@styles/mixins';
+@use '@styles/breakpoints';
 
 .contact-container {
-  text-align: center;
-  max-width: 40em;
-  margin: 0 auto;
+  & > * {
+    max-width: map-get(breakpoints.$breakpoints, 'sm');
+    margin: 0 auto;
+  }
 
   @include mixins.allChildExceptLast() {
     margin-bottom: 1rem;
   }
 
+  h1 {
+    font-size: 2rem;
+  }
+
+  address {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: colors.$white;
+    font-style: normal;
+    text-decoration: underline;
+    @include mixins.allChildExceptLast() {
+      margin-right: 0.5rem;
+    }
+    a:hover {
+      opacity: 0.8;
+    }
+  }
+
   form {
+    margin-top: 4rem;
     display: flex;
     flex-direction: column;
     label {
@@ -26,15 +48,5 @@
     @include mixins.allChildExceptLast() {
       margin-bottom: 0.5rem;
     }
-  }
-}
-
-.linkedin-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 2rem;
-  @include mixins.allChildExceptLast() {
-    margin-right: 0.5rem;
   }
 }

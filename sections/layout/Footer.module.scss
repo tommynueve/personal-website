@@ -4,8 +4,11 @@
 
 .container {
   display: none;
-  max-width: map-get(breakpoints.$breakpoints, 'lg');
-  margin: 0 auto;
+  background-color: colors.$grey-black;
+  & > * {
+    max-width: map-get(breakpoints.$breakpoints, 'sm');
+    margin: 0 auto;
+  }
   padding: 2rem;
   small {
     color: colors.$grey;

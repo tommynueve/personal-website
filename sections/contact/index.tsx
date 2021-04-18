@@ -1,5 +1,6 @@
 import MainButton from '@components/buttons/MainButton';
-import LinkedinIcon from '@components/icons/LinkedinIcon';
+import EmailIcon from '@components/icons/EmailIcon';
+import SocialLinks from '@components/sociallinks';
 import style from './Contact.module.scss';
 
 const ContactSection = () => {
@@ -7,6 +8,11 @@ const ContactSection = () => {
     <section className={style['contact-container']}>
       <h1>Got a proposition?</h1>
       <h3>I'm always on the look for new challenges!</h3>
+      <address>
+        <EmailIcon />
+        <a href='mailto:totti_b@hotmail.com'>totti_b@hotmail.com</a>
+      </address>
+      <SocialLinks />
       <form>
         <label htmlFor='name-input'>Name</label>
         <input id='name-input' type='text' placeholder='Your name'></input>
@@ -16,10 +22,6 @@ const ContactSection = () => {
         <textarea id='message-input' placeholder='A nice message' rows={8}></textarea>
         <MainButton text='Get in touch' type='submit' />
       </form>
-      <div className={style['linkedin-container']}>
-        <p>Or find me on Linkedin: </p>
-        <LinkedinIcon />
-      </div>
     </section>
   );
 };
