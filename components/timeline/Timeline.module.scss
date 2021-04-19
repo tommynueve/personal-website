@@ -43,6 +43,7 @@
   .text {
     grid-area: text;
     position: relative;
+    padding-bottom: 2em;
     &::before {
       content: '';
       width: 2px;
@@ -58,7 +59,7 @@
   h3 {
     margin: 0;
   }
-  &:not(:last-child) > .text {
-    padding-bottom: 2em;
+  &:last-child > .text {
+    padding-bottom: 1em;
   }
 }
