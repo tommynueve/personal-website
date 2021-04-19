@@ -6,7 +6,7 @@ export default function Projects() {
   return (
     <>
       <Head>
-        <title>Contact Me - Tomas Bangerter</title>
+        <title>My Projects - Tomas Bangerter</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Layout>

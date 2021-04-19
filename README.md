@@ -18,6 +18,16 @@ _Note_: Contact form will not work locally unless EMAIL and EMAIL_PW env variabl
 
 ## Live Demo
 
-The website is deployed and hosted in Vercel.
+The website is deployed and hosted in Vercel:
+
 [https://personal-website-fhyk64s07-tommynueve.vercel.app/](https://personal-website-fhyk64s07-tommynueve.vercel.app/)
+
 _This is still a work in progress! Expect some unfinished functionality and placeholder text while I complete it!_
+
+### Remaining work
+
+- Making it SEO Friendly by completing the Heads.
+- Finishing the Projects section.
+- Adding another call to action to check my resume at the bottom of the home page.
+- Simplify text.
+- Creating a logo (maybe).
