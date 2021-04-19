@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>My portfolio</title>
+        <title>Tomas Bangerter Frontend Developer - Home</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Layout>

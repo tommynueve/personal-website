@@ -1,5 +1,8 @@
 import MainCard from '@components/cards/MainCard';
 import FrontendIcon from '@components/icons/FrontendIcon';
+import BackendIcon from '@components/icons/BackendIcon';
+import UIUXIcon from '@components/icons/UIUXIcon';
+import CICDIcon from '@components/icons/CICDIcon';
 import styles from './TechSkills.module.scss';
 
 const TechSkillsSection = () => {
@@ -33,19 +36,21 @@ const content: Skill[] = [
   },
   {
     title: 'Backend development',
-    details: ['I have experience building micro-services with Nodejs, using Express and Restify, and with Python using Flask.'],
-    icon: <FrontendIcon />,
+    details: [
+      'I have experience building REST micro-services using Nodejs and Python, communicating with SQL and NoSQL DBs like Postgre or Mongo.',
+    ],
+    icon: <BackendIcon />,
   },
   {
     title: 'UI / UX Design',
     details: [
       'I design websites applying UI and UX fundamentals and accessibility practices. I prototype with Adobe XD to facilitate web development.',
     ],
-    icon: <FrontendIcon />,
+    icon: <UIUXIcon />,
   },
   {
     title: 'CI / CD',
-    details: ['Git with GitHub and GitLab.', 'Docker, Openshift, IBM Cloud.', 'Artificial Intelligence.'],
-    icon: <FrontendIcon />,
+    details: ['I use docker containers along with cloud platforms like IBM Cloud and Openshift', 'Git is my go-to version control system.'],
+    icon: <CICDIcon />,
   },
 ];

@@ -17,7 +17,7 @@
     ' circle text';
   @include mixins.mq(sm) {
     grid-template-areas: 'date circle text';
-    grid-template-columns: 10% auto auto;
+    grid-template-columns: 10% auto 90%;
   }
   .circle {
     grid-area: circle;
@@ -43,6 +43,7 @@
   .text {
     grid-area: text;
     position: relative;
+    padding-bottom: 2em;
     &::before {
       content: '';
       width: 2px;
@@ -58,7 +59,11 @@
   h3 {
     margin: 0;
   }
-  &:not(:last-child) > .text {
-    padding-bottom: 2em;
+  a {
+    text-decoration: underline;
+    color: -webkit-link;
+  }
+  &:last-child > .text {
+    padding-bottom: 1em;
   }
 }
