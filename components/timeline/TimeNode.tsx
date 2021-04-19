@@ -2,7 +2,7 @@ import style from './Timeline.module.scss';
 
 export interface Props {
   title: string;
-  description: string;
+  description: React.ReactElement | string;
   date?: string;
 }
 
