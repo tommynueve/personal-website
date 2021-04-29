@@ -8,6 +8,11 @@ export default function Projects() {
       <Head>
         <title>My Projects - Tomas Bangerter</title>
         <link rel='icon' href='/favicon.ico' />
+        <meta name='description' content='Checkout some examples of my work. Still under construction.' />
+        <meta property='og:type' content='website' />
+        <meta property='og:url' content='https://www.tomasbangerter.com/projects' />
+        <meta property='og:title' content='Tomas Bangerter - Projects' />
+        <meta property='og:image' content='https://www.tomasbangerter.com/author.jpeg' />
       </Head>
       <Layout>
         {/* All Inline styles are to be removed once the sections for this page are created! */}

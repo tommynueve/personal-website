@@ -11,6 +11,14 @@ export default function Home() {
       <Head>
         <title>Tomas Bangerter Frontend Developer - Home</title>
         <link rel='icon' href='/favicon.ico' />
+        <meta
+          name='description'
+          content='Im a web developer with 3+ years of experience in front-end development focusing on React and Nodejs.'
+        />
+        <meta property='og:type' content='website' />
+        <meta property='og:url' content='https://www.tomasbangerter.com' />
+        <meta property='og:title' content='Tomas Bangerter Frontend Developer - Home' />
+        <meta property='og:image' content='https://www.tomasbangerter.com/author.jpeg' />
       </Head>
       <Layout>
         <HomeSection />
