@@ -1,0 +1,15 @@
+@use '@styles/colors';
+@use '@styles/mixins';
+@use '@styles/breakpoints';
+
+.articles-container {
+  min-height: 900px;
+  & > * {
+    max-width: map-get(breakpoints.$breakpoints, 'md');
+    margin: 0 auto;
+  }
+
+  @include mixins.allChildExceptLast() {
+    margin-bottom: 1rem;
+  }
+}
