@@ -1,8 +1,14 @@
+import EmailIcon from '@components/icons/EmailIcon';
 import GithubIcon from '@components/icons/GithubIcon';
 import LinkedinIcon from '@components/icons/LinkedinIcon';
 import style from './SocialLinks.module.scss';
+import configLinks from '@config/Links';
 
-const SocialLinks = () => {
+interface Props {
+  showEmailIcon?: boolean;
+}
+
+const SocialLinks: React.FC<Props> = ({ showEmailIcon = true }) => {
   return (
     <ul className={style.container}>
       <li>
@@ -15,6 +21,15 @@ const SocialLinks = () => {
           <GithubIcon />
         </a>
       </li>
+      {showEmailIcon && (
+        <li>
+          <address>
+            <a href={`mailto:${configLinks.email}`}>
+              <EmailIcon />
+            </a>
+          </address>
+        </li>
+      )}
     </ul>
   );
 };

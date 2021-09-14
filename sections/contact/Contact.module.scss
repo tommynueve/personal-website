@@ -3,7 +3,6 @@
 @use '@styles/breakpoints';
 
 .contact-container {
-  min-height: 900px;
   & > * {
     max-width: map-get(breakpoints.$breakpoints, 'sm');
     margin: 0 auto;

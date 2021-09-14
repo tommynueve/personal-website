@@ -1,6 +1,3 @@
-import Link from 'next/link';
-import { useRouter } from 'next/router';
-
 import style from './MenuLinkItem.module.scss';
 
 interface Props {
@@ -11,18 +8,11 @@ interface Props {
 }
 
 const MenuLinkItem: React.FC<Props> = ({ name, url, icon, variant = 'primary' }) => {
-  const { pathname } = useRouter();
-
   return (
-    <Link href={url}>
-      <a
-        className={`${style.link} ${pathname === url && variant !== 'highlighted' ? style.selected : ''} ${
-          variant === 'highlighted' ? style.highlighted : ''
-        }`}>
-        {icon}
-        <p>{name}</p>
-      </a>
-    </Link>
+    <a className={`${style.link} ${variant === 'highlighted' ? style.highlighted : ''}`} href={url}>
+      {icon}
+      <p>{name}</p>
+    </a>
   );
 };
 

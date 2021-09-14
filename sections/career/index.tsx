@@ -14,35 +14,51 @@ export default Career;
 
 const content = [
   {
+    title: 'Frontend Software Engineer at trivago',
+    description: (
+      <>
+        As I became a more seasoned front-end developer, an awesome opportunity presented itself: a new job in a new
+        country. Along with my wife, we decided to relocate to Germany where I work for trivago in their b2b web
+        application. I worked remotely during the first 3 months until my visa papers were ready, and then travelled to
+        Düsseldorf to begin this new chapter of our life. My role is still very FE focused, with opportunities to build
+        new applications from scratch, in React, while also maintaining legacy ones in Vue.
+      </>
+    ),
+    date: '2021 - Today',
+  },
+  {
     title: 'Frontend Developer at etermax',
     description: (
       <>
-        After 10 years working for the same company, I decided it was time for a change, and with more work experience as a web developer on
-        my back I joined etermax to work mostly developing and maintaining the Frontend part of the company’s website and client-facing AI
-        based solutions. <br></br>Check our landing page to see an example of my work:{' '}
+        After 10 years working for the same company, I decided it was time for a change, and with more work experience
+        as a web developer on my back I joined etermax to work mostly developing and maintaining the Frontend part of
+        the company’s website and client-facing AI based solutions. <br></br>Check our landing page to see an example of
+        my work:{' '}
         <a href='https://ailabs.etermax.com/en' target='_blank' rel='noreferrer'>
           https://ailabs.etermax.com/en
         </a>
         <br></br> I also do most of the UI/UX designing and some backend work with Nodejs and Python when it’s needed.
       </>
     ),
-    date: '2020 - Today',
+    date: '2020 - 2021',
   },
   {
     title: 'Fullstack Developer at Accenture',
     description: (
       <>
-        I decided to make a big change in my career and left an important position as a PO to start over as a web developer.<br></br>
-        Accenture let me rotate internally considering I was already a programmer despite never working as one, so I started on a new
-        project developing the frontend and backend for AI based applications like virtual assistants, AI-based search engines and document
-        processing.
+        I decided to make a big change in my career and left an important position as a PO to start over as a web
+        developer.<br></br>
+        Accenture let me rotate internally considering I was already a programmer despite never working as one, so I
+        started on a new project developing the frontend and backend for AI based applications like virtual assistants,
+        AI-based search engines and document processing.
       </>
     ),
     date: '2018 - 2020',
   },
   {
     title: 'System Analyst',
-    description: 'After a little more than 3 years of effort, I finished by bachelor’s degree at Instituto de Tecnologia ORT.',
+    description:
+      'After a little more than 3 years of effort, I finished by bachelor’s degree at Instituto de Tecnologia ORT.',
     date: '2011',
   },
   {
