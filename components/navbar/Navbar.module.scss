@@ -1,41 +1,24 @@
 @use '@styles/colors';
 @use '@styles/mixins';
 
-.bottom-nav {
-  @include mixins.mq(sm) {
-    display: none;
-  }
-
-  position: fixed;
-  bottom: 0;
-  z-index: 1;
-  width: 100%;
-  background-color: colors.$white;
-
-  ul {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 0.5rem;
-    border-top: 1px solid rgba(colors.$grey, 0.5);
-    li {
-      flex-basis: 100%;
-    }
-  }
-}
-
 .top-nav {
   font-weight: 600;
-  display: none;
-  @include mixins.mq(sm) {
-    display: block;
-  }
 
   ul {
     display: flex;
     align-items: center;
 
     @include mixins.allChildExceptLast {
-      margin-right: 1.5rem;
+      @include mixins.mq(sm) {
+        margin-right: 1.5rem;
+      }
+    }
+
+    .menu-contact {
+      display: none;
+      @include mixins.mq(sm) {
+        display: block;
+      }
     }
   }
 

@@ -4,7 +4,7 @@ import Layout from '@sections/layout';
 import Head from 'next/head';
 import TechSkillsSection from '@sections/techskills';
 import Career from '@sections/career';
-import CTAReminderSection from '@sections/ctareminder';
+import ContactSection from '@sections/contact';
 
 export default function Home() {
   return (
@@ -26,7 +26,7 @@ export default function Home() {
         <AboutMe />
         <TechSkillsSection />
         <Career />
-        <CTAReminderSection />
+        <ContactSection />
       </Layout>
     </>
   );

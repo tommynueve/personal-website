@@ -4,6 +4,7 @@ import MainButton from '@components/buttons/MainButton';
 import EmailIcon from '@components/icons/EmailIcon';
 import SocialLinks from '@components/sociallinks';
 import style from './Contact.module.scss';
+import configLinks from '@config/Links';
 
 const ContactSection = () => {
   const [name, setName] = useState('');
@@ -55,9 +56,9 @@ const ContactSection = () => {
       <h3>I'm always on the look for new challenges!</h3>
       <address>
         <EmailIcon />
-        <a href='mailto:totti_b@hotmail.com'>totti_b@hotmail.com</a>
+        <a href={`mailto:${configLinks.email}`}>{configLinks.email}</a>
       </address>
-      <SocialLinks />
+      <SocialLinks showEmailIcon={false} />
       <form onSubmit={onFormSubmit}>
         <label htmlFor='name-input'>Name</label>
         <input type='text' placeholder='Your name' onChange={(e) => setName(e.target.value)} value={name}></input>

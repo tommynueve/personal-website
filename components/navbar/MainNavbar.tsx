@@ -6,8 +6,8 @@ const MainNavbar = () => {
   return (
     <nav className={style['top-nav']}>
       <ul>
-        <SocialLinks />
-        <li>
+        <SocialLinks showEmailIcon={false} />
+        <li className={style['menu-contact']}>
           <MenuLinkItem name='Contact' url='#contact' variant='highlighted' />
         </li>
       </ul>
