@@ -11,6 +11,9 @@
   svg {
     fill: colors.$white;
   }
+  a {
+    display: flex;
+  }
   a:hover {
     opacity: 0.8;
     cursor: pointer;

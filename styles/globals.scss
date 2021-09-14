@@ -8,6 +8,7 @@ body {
   font-family: fonts.$primary;
   line-height: 1.5;
   color: colors.$black;
+  scroll-behavior: smooth;
 }
 
 a {

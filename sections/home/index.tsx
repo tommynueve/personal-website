@@ -1,9 +1,6 @@
-import Link from 'next/link';
-
 import MainButton from '@components/buttons/MainButton';
 import CircleFrame from '@components/imageframe/CircleFrame';
 import style from './Home.module.scss';
-import Links from '@config/Links';
 
 const HomeSection = () => {
   return (
@@ -13,16 +10,14 @@ const HomeSection = () => {
         Tomas Bangerter<br></br>
         <span>Frontend Developer</span>
       </h1>
-      <p>I'm a web developer with 3+ years of experience in front-end development focusing on React and Nodejs.</p>
+      <p>I'm a front-end web developer with 3+ years of experience in React and Vue.</p>
       <div className={style.ctaContainer}>
-        <a href={Links.resumeLink} target='_blank' rel='noreferrer'>
-          <MainButton text={'Check my resume'} />
+        <a href='#about'>
+          <MainButton text={'More about me'} />
         </a>
-        <Link href='/contact' passHref>
-          <a>
-            <MainButton text={'Contact me'} variant='secondary' />
-          </a>
-        </Link>
+        <a href='#contact'>
+          <MainButton text={'Contact me'} variant='secondary' />
+        </a>
       </div>
     </section>
   );

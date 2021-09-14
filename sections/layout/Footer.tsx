@@ -1,4 +1,4 @@
-import MainNavbar from '@components/navbar/MainNavbar';
+import SocialLinks from '@components/sociallinks';
 import style from './Footer.module.scss';
 
 const Footer = () => {
@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className={style.footer}>
       <div className={style.container}>
         <small>&copy; Tomas Bangerter</small>
-        <MainNavbar />
+        <SocialLinks />
       </div>
     </footer>
   );

@@ -3,10 +3,6 @@
 @use '@styles/breakpoints';
 
 .footer {
-  display: none;
-  @include mixins.mq(sm) {
-    display: block;
-  }
   background-color: colors.$grey-black;
   & > * {
     max-width: map-get(breakpoints.$breakpoints, 'lg');
@@ -17,10 +13,8 @@
     color: colors.$grey;
   }
   .container {
-    @include mixins.mq(sm) {
-      justify-content: space-between;
-      display: flex;
-      align-items: center;
-    }
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
   }
 }

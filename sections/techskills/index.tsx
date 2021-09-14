@@ -30,7 +30,7 @@ const content: Skill[] = [
   {
     title: 'Frontend development',
     details: [
-      'I build web applications using JavaScript frameworks such as React or Vue. I have strong knowledge of JavaScript ES6+, TypeScript, CSS, SASS, LESS, and semantic HTML.',
+      'This is my main focus. I build responsive, accessible and performant web apps using modern JS frameworks such as React or Vue. I have strong knowledge of ES6+, TypeScript, Redux, CSS, SASS, among others.',
     ],
     icon: <FrontendIcon />,
   },
@@ -44,13 +44,15 @@ const content: Skill[] = [
   {
     title: 'UI / UX Design',
     details: [
-      'I design websites applying UI and UX fundamentals and accessibility practices. I prototype with Adobe XD to facilitate web development.',
+      'I actively participate in the UI / UX Design process with more experienced designers providing my knowledge on the topic. If needed, I can come up with my own designs as well.',
     ],
     icon: <UIUXIcon />,
   },
   {
     title: 'CI / CD',
-    details: ['I use docker containers along with cloud platforms like IBM Cloud and Openshift', 'Git is my go-to version control system.'],
+    details: [
+      'Although I am no expert, I use docker containers along with cloud platforms like Openshift or GCP for deploys. Git my go-to version control system.',
+    ],
     icon: <CICDIcon />,
   },
 ];

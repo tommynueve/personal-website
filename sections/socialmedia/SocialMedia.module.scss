@@ -1,6 +1,0 @@
-@use '@styles/colors';
-@use '@styles/mixins';
-
-.container {
-  @include mixins.tertiaryBackground;
-}
