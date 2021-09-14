@@ -16,7 +16,7 @@ const HomeSection = () => {
           <MainButton text={'More about me'} />
         </a>
         <a href='#contact'>
-          <MainButton text={'Get in touch'} variant='secondary' />
+          <MainButton text={'Contact me'} variant='secondary' />
         </a>
       </div>
     </section>
