@@ -7,7 +7,6 @@
   align-items: center;
   font-size: 0.875rem;
   color: colors.$grey;
-  margin-top: 0.3rem;
 
   @include mixins.mq(sm) {
     color: inherit;
@@ -22,19 +21,9 @@
   }
 }
 
-.selected {
-  color: colors.$primary;
-  @include mixins.mq(sm) {
-    color: inherit;
-  }
-
-  svg {
-    fill: colors.$primary;
-  }
-}
-
 .highlighted {
   padding: 0.4rem 0.8rem;
   border-radius: 10px;
   background-color: colors.$primary;
+  color: colors.$black;
 }

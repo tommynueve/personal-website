@@ -50,7 +50,7 @@ const ContactSection = () => {
   };
 
   return (
-    <section className={style['contact-container']}>
+    <section className={style['contact-container']} id='contact'>
       <h1>Got a proposition?</h1>
       <h3>I'm always on the look for new challenges!</h3>
       <address>

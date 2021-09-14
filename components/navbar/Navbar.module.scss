@@ -35,7 +35,7 @@
     align-items: center;
 
     @include mixins.allChildExceptLast {
-      margin-right: 2rem;
+      margin-right: 1.5rem;
     }
   }
 
