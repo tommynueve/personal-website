@@ -1,13 +1,22 @@
 @use './fonts';
 @use './colors';
 
+:root {
+  --primary-color: hsl(211, 25%, 30%);
+  --primary-black-color: hsl(213, 28%, 19%);
+  --primary-light-color: hsl(216, 50%, 96%);
+  --secondary-color: hsl(36, 100%, 50%);
+  --grey-color: hsl(0, 0%, 62%);
+  --grey-black-color: hsl(220, 4%, 16%);
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: fonts.$primary;
   line-height: 1.5;
-  color: colors.$black;
+  color: colors.$primary-black;
   scroll-behavior: smooth;
 }
 

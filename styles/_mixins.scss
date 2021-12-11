@@ -17,10 +17,10 @@
 
 @mixin secondaryBackground {
   background-color: colors.$white;
-  color: colors.$black;
+  color: colors.$primary-black;
 }
 
 @mixin tertiaryBackground {
-  background-color: colors.$tertiary;
-  color: colors.$black;
+  background-color: colors.$primary-light;
+  color: colors.$primary-black;
 }

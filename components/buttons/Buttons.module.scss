@@ -1,10 +1,10 @@
 @use '@styles/colors';
 
 .main-button {
-  background-color: colors.$primary;
-  border: 2px solid colors.$primary;
+  background-color: colors.$secondary;
+  border: 2px solid colors.$secondary;
   border-radius: 10px;
-  color: colors.$black;
+  color: colors.$primary-black;
   padding: 0.9rem 1.5rem;
   cursor: pointer;
   font-weight: 600;
@@ -17,7 +17,7 @@
 
 .secondary {
   background-color: transparent;
-  color: colors.$primary;
+  color: colors.$secondary;
 
   &:hover {
     transform: translate(0px, -3px);
